@@ -1,0 +1,30 @@
+.header {
+	max-width: var(--max-width);
+	width: 100%;
+	background-color: var(--dark);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 113px;
+}
+
+.header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 43.75;
+}
+
+.header ul li {
+	color: var(--white);
+}
+
+.header button {
+	background-color: var(--green);
+	width: 19.5rem;
+	height: 3rem;
+	border-radius: 8 px;
+	border: 0px solid var(--green);
+	color: var(--white);
+}
