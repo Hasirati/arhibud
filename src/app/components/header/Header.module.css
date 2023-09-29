@@ -6,14 +6,15 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	height: 113px;
+	height: 7.0625rem;
+	margin: 0 auto;
 }
 
 .header ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 43.75;
+	width: 43.75rem;
 }
 
 .header ul li {
@@ -23,8 +24,12 @@
 .header button {
 	background-color: var(--green);
 	width: 19.5rem;
-	height: 3rem;
-	border-radius: 8 px;
+	height: 3.0625rem;
+	border-radius: 8px;
 	border: 0px solid var(--green);
 	color: var(--white);
+	font-size: 24px;
+	font-family: inherit;
 }
+
+

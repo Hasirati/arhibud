@@ -3,6 +3,7 @@
 
 	--black: #000000;
 	--dark: #2e2e2e;
+	--dark1:#404040;
 	--gray1: #9c9c9c;
 	--gray2: #d7d7d7;
 	--gray3: #f3f3f3;
@@ -25,7 +26,7 @@ body {
 
 body {
 	color: rgb(var(--black));
-	font-size: 1.1rem;
+	font-size: 1.125rem;
 }
 
 a, li {
