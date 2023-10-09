@@ -5,15 +5,15 @@
 	flex-direction: row
 	justify-content: space-evenly
 	align-items: center
-	height: 113px
+	@include adaptiv("height", 113, 100, 0)
 	margin: 0 auto
 
 	ul
 		display: flex
 		flex-direction: row
 		justify-content: space-between
-		width: 43.75rem
-		font-size: 1.5rem
+		@include adaptiv("width", 700, 0, 0)
+		@include adaptiv("font-size", 24, 0, 0)
 
 		li
 			color: var(--white)
@@ -21,17 +21,17 @@
 	&Img
 		position: relative
 		width: 100%
-		max-width: 16.625rem
-		height: 4.3125rem
+		@include adaptiv("max-width", 266, 170, 0)
+		@include adaptiv("height", 69, 44, 0)
 
 	& button
 		background-color: var(--green)
-		width: 19.5rem
-		height: 3.0625rem
-		border-radius: 0.5rem
+		@include adaptiv("width", 312, 50, 0)
+		@include adaptiv("height", 49, 50, 0)
+		border-radius: 8px
 		border: 0px solid var(--green)
 		color: var(--white)
-		font-size: 24px
+		@include adaptiv("font-size", 24, 0, 0)
 		font-family: inherit
 
 // @media screen and (max-width: 1280px) {
