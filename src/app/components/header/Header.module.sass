@@ -1,19 +1,22 @@
+@import "../../adaptive.sass"
+
 .header
+	max-width: var(--max-width)
 	width: 100%
 	background-color: var(--dark)
 	display: flex
 	flex-direction: row
 	justify-content: space-evenly
 	align-items: center
-	@include adaptiv("height", 113, 100, 0)
+	@include adaptiv("height", 113, 100, 1)
 	margin: 0 auto
 
 	ul
 		display: flex
 		flex-direction: row
 		justify-content: space-between
-		@include adaptiv("width", 700, 0, 0)
-		@include adaptiv("font-size", 24, 0, 0)
+		@include adaptiv("width", 700, 0, 1)
+		@include adaptiv("font-size", 24, 0, 1)
 
 		li
 			color: var(--white)
@@ -21,17 +24,17 @@
 	&Img
 		position: relative
 		width: 100%
-		@include adaptiv("max-width", 266, 170, 0)
+		@include adaptiv("max-width", 266, 170, 1)
 		@include adaptiv("height", 69, 44, 0)
 
 	& button
 		background-color: var(--green)
-		@include adaptiv("width", 312, 50, 0)
-		@include adaptiv("height", 49, 50, 0)
+		@include adaptiv("width", 312, 50, 1)
+		@include adaptiv("height", 49, 50, 1)
 		border-radius: 8px
 		border: 0px solid var(--green)
 		color: var(--white)
-		@include adaptiv("font-size", 24, 0, 0)
+		@include adaptiv("font-size", 24, 0, 1)
 		font-family: inherit
 
 // @media screen and (max-width: 1280px) {

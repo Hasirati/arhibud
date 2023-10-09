@@ -7,39 +7,27 @@ const Home = () => {
 		<main>
 			<div className={style.home}>
 				<div>
-					<Image
-						className={''}
-						src='/doluna.png'
-						alt='Arhibud Logo'
-						width={520}
-						height={360}
-					/>
+					<div className={style.homeImg}>
+						<Image src='/doluna.png' alt='Arhibud Logo' fill />
+					</div>
 					<div className={style.caption}>
 						<p>ЖК Глибока долина</p>
 						<p>здача 4кв 2022р.</p>
 					</div>
 				</div>
 				<div>
-					<Image
-						className={''}
-						src='/gai.png'
-						alt='Arhibud Logo'
-						width={520}
-						height={360}
-					/>
+					<div className={style.homeImg}>
+						<Image src='/gai.png' alt='Arhibud Logo' fill />
+					</div>
 					<div className={style.caption}>
 						<p>ЖК Гаї Шевченківські</p>
 						<p>Планується</p>
 					</div>
 				</div>
 				<div>
-					<Image
-						className={''}
-						src='/korolova.png'
-						alt='Arhibud Logo'
-						width={520}
-						height={360}
-					/>
+					<div className={style.homeImg}>
+						<Image src='/korolova.png' alt='Arhibud Logo' fill />
+					</div>
 					<div className={style.caption}>
 						<p>ЖК Корольова</p>
 						<p>Планується</p>
