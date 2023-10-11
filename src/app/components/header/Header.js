@@ -8,6 +8,14 @@ const Header = () => {
 			<div className={style.headerImg}>
 				<Image src='/logo.svg' alt='Arhibud Logo' fill />
 			</div>
+			<button className={style.iconCall}>
+				<Image
+					src='/phone-incoming.svg'
+					alt='Button for call'
+					width={32}
+					height={32}
+				/>
+			</button>
 			<ul>
 				<li>Будується</li>
 				<li>Збудовано</li>
@@ -15,7 +23,10 @@ const Header = () => {
 				<li>Про нас</li>
 				<li>Контакти</li>
 			</ul>
-			<button>Замовити дзвінок</button>
+			<button className={style.headerBut}>Замовити дзвінок</button>
+			<div className={style.header_burger}>
+				<span></span>
+			</div>
 		</div>
 	)
 }

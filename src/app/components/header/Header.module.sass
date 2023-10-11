@@ -27,30 +27,106 @@
 		@include adaptiv("max-width", 266, 170, 1)
 		@include adaptiv("height", 69, 44, 0)
 
-	& button
+	&But
 		background-color: var(--green)
 		@include adaptiv("width", 312, 50, 1)
 		@include adaptiv("height", 49, 50, 1)
 		border-radius: 8px
 		border: 0px solid var(--green)
 		color: var(--white)
-		@include adaptiv("font-size", 24, 0, 1)
+		@include adaptiv("font-size", 24, 14, 1)
 		font-family: inherit
 
-// @media screen and (max-width: 1280px) {
-// 	.headerImg {
-// 		max-width: 170px;
-// 		height: 44px;
-// 	}
+	&_burger
+		display: none
 
-// 	.header ul {
-// 		max-width: 500px;
-// 		width: 100%;
-// 		font-size: 16px;
-// 	}
+.iconCall
+	display: none
 
-// 	.header button {
-// 		font-size: 16px;
-// 		width: 0px;
-// 	}
-// }
+@media screen and (max-width: 1280px)
+	.headerBut
+		@include adaptiv("width", 200, 50, 1)
+		@include adaptiv("height", 60, 50, 1)
+
+@media screen and (max-width: 960px)
+	.headerBut
+		@include adaptiv("width", 312, 50, 1)
+		@include adaptiv("height", 49, 50, 1)
+
+	.header_burger
+		display: block
+		position: relative
+		width: 30px
+		height: 20px
+		z-index: 3
+		cursor: pointer
+
+		span
+			background-color: white
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			top: 9px
+			transition: all 0.3s ease 0s
+
+		&::before,
+		&::after
+			content: ''
+			background-color: white
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			transition: all 0.3s ease 0s
+
+		&::before
+			top: 0
+
+		&::after
+			bottom: 0
+
+		&.active::before
+			transform: rotate(45deg)
+			top: 9px
+
+		&.active::after
+			transform: rotate(-45deg)
+			bottom: 9px
+
+		&.active span
+			transform: scale(0)
+
+	.header
+		& ul
+			position: fixed
+			top: -100%
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: var(--green)
+			padding: 100px 10px 20px 10px
+			transition: all 0.3s ease 0s
+			overflow: auto
+
+		&.active
+			top: 0
+			display: block
+
+		li
+			margin: 0px 0px 20px 0px
+			text-transform: uppercase
+			font-size: 120%
+
+@media screen and (max-width: 425px)
+	.headerBut
+		display: none
+
+	.iconCall
+		position: relative
+		display: block
+		width: 50px
+		height: 50px
+		background-color: var(--green)
+		border: 0
+		border-radius: 8px
