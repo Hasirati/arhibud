@@ -16,7 +16,7 @@ const Header = () => {
 					height={32}
 				/>
 			</button>
-			<ul>
+			<ul className={style.header_menu}>
 				<li>Будується</li>
 				<li>Збудовано</li>
 				<li>Новини</li>
