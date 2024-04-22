@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap')
+@import '../../adaptive.sass'
+
+.bydunok
+	text-align: center
+
+	h1
+		color: var(--green)
+		text-transform: uppercase
+
+.caption
+
+	&Img
+		position: relative
+		@include adaptiv("width", 795, 382, 1)
+		@include adaptiv("height", 600, 260, 1)
+		display: none
+
+.butt
+	display: flex
+	flex-direction: column
+
+	.fourM,
+	.four div
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		background-color: var(--white)
+		@include adaptiv("width", 245, 181, 1)
+		@include adaptiv("padding", 29, 20, 1)
+		border-radius: 10px
+		text-align: center
+
+		span
+			width: 52px
+			padding: 12px 0
+			background-color: #fff
+			border-radius: 360px
+			color: var(--green)
+			font-weight: 700
+			font-size: 22px
