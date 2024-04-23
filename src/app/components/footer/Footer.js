@@ -32,7 +32,7 @@ const Footer = () => {
 
 				<div className={style.svg}>
 					<Image src='/inst.svg' alt='instagram' width={40} height={40} />
-					<Image src='/fb.svg' alt='instagram' width={40} height={40} />
+					<Image src='/fb.svg' alt='facebook' width={40} height={40} />
 				</div>
 			</div>
 		</div>

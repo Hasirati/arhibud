@@ -7,35 +7,79 @@
 	h1
 		color: var(--green)
 		text-transform: uppercase
+		font-weight: 400
+		padding: 50px 0 30px
 
 .caption
+	display: flex
+	flex-direction: row
+	gap: 30px
+	padding: 50px 160px
 
-	&Img
+	.mainImg
 		position: relative
-		@include adaptiv("width", 795, 382, 1)
-		@include adaptiv("height", 600, 260, 1)
-		display: none
+		width: 795px
+		height: 600px
+		@media screen and (max-width: 414px)
+			display: none
+
+	.aboutHome
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 
 .butt
 	display: flex
 	flex-direction: column
+	gap: 30px
+	width: 520px
+
+	.four
+		display: flex
+		flex-direction: row
+		gap: 30px
+		flex-wrap: wrap
+		div
+			@include adaptiv("width", 245, 181, 1)
+
+	.fourM
+		justify-content: center
+		@include adaptiv("width", 520, 382, 1)
 
 	.fourM,
 	.four div
 		display: flex
-		flex-direction: row
-		flex-wrap: wrap
+		align-items: center
 		background-color: var(--white)
-		@include adaptiv("width", 245, 181, 1)
-		@include adaptiv("padding", 29, 20, 1)
+		@include adaptiv("height", 80, 124, 1)
 		border-radius: 10px
 		text-align: center
 
 		span
+			margin: 0 10px 0 14px
+			display: flex
+			align-items: center
+			justify-content: center
 			width: 52px
-			padding: 12px 0
+			height: 52px
 			background-color: #fff
 			border-radius: 360px
 			color: var(--green)
 			font-weight: 700
 			font-size: 22px
+
+.more
+	height: 240px
+	display: flex
+	flex-direction: row
+	margin: 33px 138px
+	img
+	ul
+		margin-left: 20px
+		display: flex
+		flex-direction: column
+		justify-content: space-evenly
+		gap: 30px
+	span
+		color: var(--green)
+		font-weight: 700
