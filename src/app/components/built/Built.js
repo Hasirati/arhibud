@@ -17,11 +17,13 @@ const Built = () => {
 					<div className={st.mainImg}>
 						<Image src='/jkTernopil.png' alt='JK Ternopil' fill />
 					</div>
+
 					<div className={st.aboutHome}>
 						<div className={st.butt}>
 							<div className={st.fourM}>
 								Здача:<b style={{ whiteSpace: 'pre' }}> Липень 2021</b>
 							</div>
+
 							<div className={st.four}>
 								<div>
 									<span>4</span>Секцій
@@ -37,6 +39,7 @@ const Built = () => {
 								</div>
 							</div>
 						</div>
+
 						<div className={st.more}>
 							<Image src='/line.svg' alt='line' width={1} height={240} />
 							<ul>
